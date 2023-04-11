@@ -1,0 +1,90 @@
+@media (max-width:768px){
+    body{
+        width: 100%
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        nav{
+            flex-direction: row;
+            width: 80%;
+            justify-content:center;
+            padding: 0px;
+            background-color: #0e5d6fc9;
+            border-radius: 15px;
+            height: 130px;
+            }
+        a{
+            font-size: 2.5rem;
+        }
+        ul{
+            flex-direction: row;
+            gap: 50px;
+    }
+   }
+    footer{
+        width: 768;
+        flex-direction: column;
+        div{ 
+            flex-direction: row-reverse;
+       gap: 30px;
+        }
+        img{
+        width: 48px;
+        height: 48px;
+        }
+    figure{ 
+        font-size: 30px;
+        justify-self: center;
+    
+    }
+    figcaption{
+        font-size: 22px;
+    }
+}
+    
+    .section-main{
+        background-image: url(../assets/img/foto-portada.jpg);
+        background-size: 768px;
+        height: 460px;
+        background-repeat: none;
+        h1{
+            font-size: 95px;
+        }
+    h2{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        }
+    button{
+        width: 450px;
+    }
+    a{
+        font-size: 30px;
+    }
+}
+}
+    .section-main2{
+        height: 260px;
+        width: 100%;
+    h2{
+        font-size: 40px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin: 0px 5px 2px 5px;
+    }
+}
+    .section-main3{
+    h2{
+        font-size: 37px;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    }
+
+
+

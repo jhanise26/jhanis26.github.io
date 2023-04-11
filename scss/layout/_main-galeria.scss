@@ -1,0 +1,37 @@
+.main-galeria{
+    background-color: bisque;
+    background-image: url(../assets/img/fondo-informate.jpg);
+    background-size: 1440px;
+    height: 600px;
+    img{
+    width: 100px;
+    }
+}
+.h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    font-size: 42px;
+    font-family: 'Satisfy', cursive;
+    background-image: url(../assets/img/fondo-informate.jpg);
+    background-size: 1440px;
+    background-position: center;
+}
+.carrusel{
+    display: flex;
+    max-width: 7000px;
+    height: 900px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+.carrusel-img{
+    width: 100%;
+    object-fit:cover;
+    scroll-snap-align:center;
+    img{
+        margin: 30px;
+        justify-content: center;
+    }
+}

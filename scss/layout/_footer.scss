@@ -1,0 +1,41 @@
+footer{
+    background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550);
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+
+    div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    gap: 35px;
+}
+    figure{
+    display: flex;
+    flex-direction: row;
+}
+    img{
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+    h3{
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    padding: 15px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+    figcaption{
+    margin: 27px 22px 22px 0px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+}

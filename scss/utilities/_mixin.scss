@@ -1,0 +1,23 @@
+@mixin flex ($width, $height, $display, $padding, $margin, $gap){
+    width: $width;
+    height: $height;
+    display: $display;
+    padding: $padding;
+    margin: $margin;
+    gap: $gap;
+
+}
+@mixin img ($background-color, $background-image, $background-size){
+    background-color: $background-color;
+    background-image: $background-image;
+    background-size: $background-size;
+    
+}
+@mixin font ($font-size, $font-family){
+    font-size: $font-size;
+    font-family: $font_family;
+    }
+@mixin justify ($justify-content, $justify-items){
+    justify-content: $justify-content;
+    justify-items: $justify-items;
+}

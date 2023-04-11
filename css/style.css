@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 100px; }
+  header img {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550); }
+  header p {
+    background-size: 10%;
+    font-size: 60px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace; }
+  header nav {
+    width: 85%;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550); }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    size: 100%; }
+  header a {
+    font-size: 25px;
+    align-items: center, center;
+    margin: 32px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; }
+  header li {
+    display: flex;
+    justify-content: center;
+    height: 100%; }
+  header li:hover {
+    background-color: rgba(128, 128, 128, 0.349);
+    width: 23%;
+    height: 100%; }
+  header a:hover {
+    font-size: 28px; }
+
+.main-informate {
+  background-image: url(../assets/img/fondo-informate.jpg);
+  background-size: 1440px; }
+  .main-informate h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 27px;
+    padding: 20px;
+    margin: 15px; }
+  .main-informate section {
+    width: 1300px;
+    padding: 50px;
+    padding: 30px;
+    justify-content: center; }
+
+.one, .two, .three, .four, .five, .six, .seven {
+  background-color: lightblue;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .one h2, .two h2, .three h2, .four h2, .five h2, .six h2, .seven h2 {
+    grid-area: text1;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center; }
+  .one h3, .two h3, .three h3, .four h3, .five h3, .six h3, .seven h3 {
+    grid-area: text2;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    background-color: white;
+    padding: 20px;
+    margin: 15px; }
+
+.two {
+  background-color: lightcoral; }
+
+.three {
+  background-color: lightgreen; }
+
+.four {
+  background-color: lightseagreen; }
+
+.five {
+  background-color: lightsalmon; }
+
+.six {
+  background-color: #0e5d6fc9; }
+
+.seven {
+  background-color: lightgreen; }
+
+.video {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-items: center; }
+  .video iframe {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    margin-left: 450px; }
+
+footer {
+  background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550);
+  display: flex;
+  flex-direction: row;
+  width: 1440px; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    gap: 35px; }
+  footer figure {
+    display: flex;
+    flex-direction: row; }
+  footer img {
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+  footer h3 {
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    padding: 15px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 10px; }
+  footer figcaption {
+    margin: 27px 22px 22px 0px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif; }
+
+.main-boletos {
+  display: grid;
+  width: 1440px;
+  height: 1200px;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-template-areas: "fotm sect1" "fotm sect1";
+  background-image: url(../assets/img/fondo-informate.jpg);
+  background-size: 1440px; }
+  .main-boletos img {
+    width: 300px; }
+
+.sect1 {
+  grid-area: sect1;
+  padding: 40px;
+  margin: 45px;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-template-areas: "none part1 ." "part2 . part3" " part4 part4 part4";
+  gap: 25px; }
+
+.sect1 h2 {
+  grid-area: part1;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+  margin: 10px;
+  text-align: center;
+  height: 40px;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.part2 {
+  grid-area: part2; }
+
+.part3 {
+  grid-area: part3; }
+
+.sect1 fieldset {
+  grid-area: part4;
+  display: flex;
+  flex-direction: column;
+  height: 100px; }
+
+.sect1 label {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif; }
+
+.sect1 legend {
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif; }
+
+.sect1 span {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif; }
+
+.main-galeria {
+  background-color: bisque;
+  background-image: url(../assets/img/fondo-informate.jpg);
+  background-size: 1440px;
+  height: 600px; }
+  .main-galeria img {
+    width: 100px; }
+
+.h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-size: 42px;
+  font-family: 'Satisfy', cursive;
+  background-image: url(../assets/img/fondo-informate.jpg);
+  background-size: 1440px;
+  background-position: center; }
+
+.carrusel {
+  display: flex;
+  max-width: 7000px;
+  height: 900px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; }
+
+.carrusel-img {
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center; }
+  .carrusel-img img {
+    margin: 30px;
+    justify-content: center; }
+
+main {
+  background-color: rgba(240, 128, 128, 0.829);
+  width: 1440px; }
+
+.section-main {
+  background-image: url(../assets/img/foto-portada.jpg);
+  background-size: 1440px;
+  height: 420px;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-areas: 2;
+  grid-template-areas: "item1 ." "item2 item3";
+  column-gap: 40px; }
+  .section-main h1 {
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+    font-family: 'Satisfy', cursive;
+    padding: 30px 30px 0px 30px;
+    margin: 30px 30px 0px 30px; }
+  .section-main h2 {
+    grid-area: item2;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px; }
+  .section-main button {
+    grid-area: item3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0px 24px 30px 100px;
+    padding: 10px;
+    background-color: #c50b0b;
+    border: #c50b0b;
+    border-radius: 20px; }
+  .section-main a {
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none; }
+
+.section-main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  background-color: white;
+  width: 1440px; }
+  .section-main2 h2 {
+    padding: 10px;
+    margin: 25px 20px 10px 20px;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif; }
+  .section-main2 p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 5px 5px 5px;
+    margin: 0px 5px 20px 5px; }
+
+.section-main3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-main3 figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-main3 h2 {
+    font-size: 26px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+    margin: 15px; }
+  .section-main3 img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 100%; }
+  .section-main3 div {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 90px;
+    justify-content: space-around; }
+  .section-main3 figcaption {
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 40px;
+    padding-right: 10px; }
+
+.main-maps {
+  background-image: url(../assets/img/fondo-informate.jpg);
+  background-size: 1440px;
+  height: 1460px; }
+  .main-maps h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Satisfy', cursive;
+    padding: 10px;
+    margin: 10px; }
+  .main-maps section {
+    margin: 0px 20px 20px 20px; }
+  .main-maps h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px; }
+  .main-maps div {
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: "ub1 ub2 ub3" "ub4 ub5 ub6" "none ub7 .";
+    place-items: center center; }
+
+.ubi1 {
+  grid-area: ub1;
+  width: 240px;
+  height: 200px; }
+
+.ubi2 {
+  grid-area: ub2;
+  width: 240px;
+  height: 200px; }
+
+.ubi3 {
+  grid-area: ub3;
+  width: 240px;
+  height: 200px; }
+
+.ubi4 {
+  grid-area: ub4;
+  width: 240px;
+  height: 200px; }
+
+.ubi5 {
+  grid-area: ub5;
+  width: 240px;
+  height: 200px; }
+
+.ubi6 {
+  grid-area: ub6;
+  width: 240px;
+  height: 200px; }
+
+.ubi7 {
+  grid-area: ub7;
+  width: 280px;
+  height: 220px; }
+
+@media (max-width: 320px) {
+  body {
+    width: 320px; }
+  header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column; }
+    header img {
+      background-color: #0e5d6fc9;
+      padding: 5px;
+      width: 30px;
+      height: 30px; }
+    header p {
+      margin: 10px;
+      font-size: 40px; }
+    header nav {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      padding: 0px;
+      background-color: #0e5d6fc9;
+      border-radius: 15px;
+      height: 150px; }
+  .section-main {
+    background-image: url(../assets/img/foto-portada.jpg);
+    background-size: 320px;
+    background-repeat: no-repeat; } }
+
+@media (max-width: 768px) {
+  body {
+    width: 100%; }
+  header {
+    width: 100%;
+    height: 100px; }
+    header nav {
+      flex-direction: row;
+      width: 80%;
+      justify-content: center;
+      padding: 0px;
+      background-color: #0e5d6fc9;
+      border-radius: 15px;
+      height: 130px; }
+    header a {
+      font-size: 2.5rem; }
+    header ul {
+      flex-direction: row;
+      gap: 50px; }
+  footer {
+    width: 768;
+    flex-direction: column; }
+    footer div {
+      flex-direction: row-reverse;
+      gap: 30px; }
+    footer img {
+      width: 48px;
+      height: 48px; }
+    footer figure {
+      font-size: 30px;
+      justify-self: center; }
+    footer figcaption {
+      font-size: 22px; }
+  .section-main {
+    background-image: url(../assets/img/foto-portada.jpg);
+    background-size: 768px;
+    height: 460px;
+    background-repeat: none; }
+    .section-main h1 {
+      font-size: 95px; }
+    .section-main h2 {
+      font-size: 40px;
+      color: white; }
+    .section-main button {
+      width: 450px; }
+    .section-main a {
+      font-size: 30px; } }
+
+.section-main2 {
+  height: 260px;
+  width: 100%; }
+  .section-main2 h2 {
+    font-size: 40px; }
+  .section-main2 p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0px 5px 2px 5px; }
+
+.section-main3 h2 {
+  font-size: 37px; }
+
+.section-main3 img {
+  width: 250px;
+  height: 250px; }
