@@ -7,34 +7,36 @@ header {
   width: 1440px;
   display: flex;
   flex-direction: row;
-  background-color: white;
-  height: 100px; }
+  background-color: rgba(255, 255, 255, 0.616);
+  height: 96px; }
   header img {
     padding: 20px;
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 96px;
     background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550); }
   header p {
-    background-size: 10%;
-    font-size: 60px;
+    background-size: 8%;
+    font-size: 50px;
     padding: 20px;
-    font-family: 'Courier New', Courier, monospace; }
+    font-family: 'Quicksand', sans-serif;
+    color: white; }
   header nav {
-    width: 85%;
+    width: 1300px;
     justify-content: space-evenly;
     background-image: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550); }
   header ul {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
-    size: 100%; }
+    size: 100%;
+    height: 100%; }
   header a {
     font-size: 25px;
     align-items: center, center;
     margin: 32px;
     text-decoration: none;
     color: white;
-    font-family: 'Courier New', Courier, monospace; }
+    font-family: 'Quicksand', sans-serif; }
   header li {
     display: flex;
     justify-content: center;
@@ -42,9 +44,124 @@ header {
   header li:hover {
     background-color: rgba(128, 128, 128, 0.349);
     width: 23%;
-    height: 100%; }
+    height: 101%; }
   header a:hover {
     font-size: 28px; }
+
+main {
+  background-color: rgba(240, 128, 128, 0.829);
+  width: 1440px; }
+
+.section-main {
+  background-image: url(../assets/img/foto-portada.jpg);
+  background-size: 1440px;
+  height: 430px;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-areas: 2;
+  grid-template-areas: "item1 ." "item2 item3";
+  column-gap: 40px; }
+  .section-main h1 {
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+    font-family: 'Satisfy', cursive;
+    padding: 30px 30px 0px 30px;
+    margin: 30px 30px 0px 30px; }
+  .section-main h2 {
+    grid-area: item2;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px; }
+  .section-main button {
+    grid-area: item3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0px 24px 30px 100px;
+    padding: 10px;
+    background-color: #CF2B10;
+    border: #CF2B10;
+    border-radius: 20px; }
+  .section-main a {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none; }
+  .section-main a:hover {
+    font-size: 28px;
+    justify-content: center; }
+
+.section-main2 {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  background-color: white;
+  width: 1440px;
+  align-items: center; }
+  .section-main2 h2 {
+    padding: 10px;
+    margin: 25px 20px 10px 20px;
+    font-size: 35px;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif; }
+  .section-main2 p {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px 5px 5px 5px;
+    margin: 0px 5px 20px 5px;
+    text-align: center; }
+
+.section-main3 {
+  display: flex;
+  height: 1500px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(); }
+
+.container-index {
+  width: 1000px;
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.815); }
+  .container-index figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .container-index h2 {
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    margin: 15px; }
+  .container-index img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 100%; }
+  .container-index div {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 90px;
+    justify-content: space-around; }
+  .container-index figcaption {
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 40px;
+    padding-right: 10px; }
 
 .main-informate {
   background-image: url(../assets/img/fondo-informate.jpg);
@@ -237,126 +354,6 @@ footer {
     margin: 30px;
     justify-content: center; }
 
-main {
-  background-color: rgba(240, 128, 128, 0.829);
-  width: 1440px; }
-
-.section-main {
-  background-image: url(../assets/img/foto-portada.jpg);
-  background-size: 1440px;
-  height: 420px;
-  background-position: center;
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-areas: 2;
-  grid-template-areas: "item1 ." "item2 item3";
-  column-gap: 40px; }
-  .section-main h1 {
-    grid-area: item1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 85px;
-    font-family: 'Satisfy', cursive;
-    padding: 30px 30px 0px 30px;
-    margin: 30px 30px 0px 30px; }
-  .section-main h2 {
-    grid-area: item2;
-    display: flex;
-    align-content: baseline;
-    justify-content: center;
-    font-family: 'Satisfy', cursive;
-    font-size: 30px; }
-  .section-main button {
-    grid-area: item3;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 400px;
-    margin: 0px 24px 30px 100px;
-    padding: 10px;
-    background-color: #c50b0b;
-    border: #c50b0b;
-    border-radius: 20px; }
-  .section-main a {
-    font-size: 22px;
-    font-family: 'Ubuntu', sans-serif;
-    padding-top: 12px;
-    color: white;
-    text-decoration: none; }
-
-.section-main2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 200px;
-  background-color: white;
-  width: 1440px; }
-  .section-main2 h2 {
-    padding: 10px;
-    margin: 25px 20px 10px 20px;
-    font-size: 32px;
-    font-family: 'Ubuntu', sans-serif; }
-  .section-main2 p {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0px 5px 5px 5px;
-    margin: 0px 5px 20px 5px; }
-
-.section-main3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .section-main3 figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .section-main3 h2 {
-    font-size: 26px;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 20px;
-    margin: 15px; }
-  .section-main3 img {
-    width: 220px;
-    height: 220px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 100%; }
-  .section-main3 div {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    gap: 90px;
-    justify-content: space-around; }
-  .section-main3 figcaption {
-    font-size: 20px;
-    margin: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-right: 40px;
-    padding-right: 10px; }
-
-@media (max-width: 768px) {
-  body {
-    width: 100%; }
-  header {
-    width: 100%;
-    height: 40px; }
-    header nav {
-      flex-direction: row;
-      width: 80%;
-      justify-content: center;
-      padding: 0px;
-      background-color: #0e5d6fc9;
-      border-radius: 15px;
-      height: 130px; }
-    header a {
-      font-size: 1.2rem; }
-    header ul {
-      flex-direction: row;
-      gap: 50px; } }
-
 .main-maps {
   background-image: url(../assets/img/fondo-informate.jpg);
   background-size: 1440px;
@@ -432,84 +429,54 @@ main {
       padding: 0px;
       background-color: #0e5d6fc9;
       border-radius: 15px;
-      height: 130px; }
+      height: 130px;
+      display: flex; }
     header a {
-      font-size: 2.5rem; }
+      font-size: 27px;
+      display: flex;
+      flex-direction: column; }
     header ul {
       flex-direction: row;
       gap: 50px; }
-  footer {
-    width: 768;
-    flex-direction: column; }
-    footer div {
-      flex-direction: row-reverse;
-      gap: 30px; }
-    footer img {
-      width: 48px;
-      height: 48px; }
-    footer figure {
-      font-size: 30px;
-      justify-self: center; }
-    footer figcaption {
-      font-size: 22px; }
-  .section-main {
-    background-image: url(../assets/img/foto-portada.jpg);
-    background-size: 768px;
-    height: 460px;
-    background-repeat: none; }
-    .section-main h1 {
-      font-size: 95px; }
-    .section-main h2 {
-      font-size: 40px;
-      color: white; }
-    .section-main button {
-      width: 450px; }
-    .section-main a {
-      font-size: 30px; } }
-
-.section-main2 {
-  height: 260px;
-  width: 100%; }
-  .section-main2 h2 {
-    font-size: 40px; }
-  .section-main2 p {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin: 0px 5px 2px 5px; }
-
-.section-main3 h2 {
-  font-size: 37px; }
-
-.section-main3 img {
-  width: 250px;
-  height: 250px; }
-
-@media (max-width: 320px) {
-  body {
-    width: 320px; }
-  header {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column; }
-    header img {
-      background-color: #0e5d6fc9;
-      padding: 5px;
-      width: 30px;
-      height: 30px; }
-    header p {
-      margin: 10px;
+    header footer {
+      width: 768;
+      flex-direction: column; }
+      header footer div {
+        flex-direction: row-reverse;
+        gap: 30px; }
+      header footer img {
+        width: 48px;
+        height: 48px; }
+      header footer figure {
+        font-size: 30px;
+        justify-self: center; }
+      header footer figcaption {
+        font-size: 22px; }
+    header .section-main {
+      background-image: url(../assets/img/foto-portada.jpg);
+      background-size: contain;
+      height: 460px; }
+      header .section-main h1 {
+        font-size: 60px; }
+      header .section-main h2 {
+        font-size: 25px;
+        color: white; }
+      header .section-main button {
+        width: 320px; }
+      header .section-main a {
+        font-size: 10px; }
+  .section-main2 {
+    height: 260px;
+    width: 100%; }
+    .section-main2 h2 {
       font-size: 40px; }
-    header nav {
+    .section-main2 p {
       display: flex;
-      width: 80%;
       justify-content: center;
-      padding: 0px;
-      background-color: #0e5d6fc9;
-      border-radius: 15px;
-      height: 150px; }
-  .section-main {
-    background-image: url(../assets/img/foto-portada.jpg);
-    background-size: 320px;
-    background-repeat: no-repeat; } }
+      font-size: 30px;
+      margin: 0px 5px 2px 5px; }
+  .section-main3 h2 {
+    font-size: 37px; }
+  .section-main3 img {
+    width: 250px;
+    height: 250px; } }
