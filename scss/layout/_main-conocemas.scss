@@ -1,19 +1,30 @@
 .main-informate{
-    background-image: url(../assets/img/fondo-informate.jpg);
-    background-size: 1440px;
+    background-image: url(../assets/img/fondo-de-main-blanco.jpg);
+    background-size: contain;
     h2{
     display: flex;
     justify-content: center;
-    font-family: 'Satisfy', cursive;
-    font-size: 27px;
-    padding: 20px;
-    margin: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    padding: 100px;
+    color: white;
+    }
+    h4{
+    background-color: white;
+    padding: 30px;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
     }
     section{
-        width: 1300px;
+        width: 1100px;
         padding: 50px;
-        padding: 30px;
-        justify-content: center;
+        margin: 115px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-content: center, center;
+        background-color: rgba(255, 255, 255, 0.575);
     }
 }
 .one{
@@ -21,21 +32,25 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    margin: 30px;
     h2{
         grid-area: text1;
         background-color: black;
         color: white;
         display: flex;
         align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
     }
         h3{
         grid-area: text2;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-size: 17px;
         background-color: white;
         padding: 20px;
         margin: 15px;
     }
+
 }
 .two{
     background-color: lightcoral;
@@ -64,10 +79,8 @@
     @extend .one
 }
 .video{
-    width: 100%;
+    width: 1440px;
     height: 380px;
-    display: flex;
-    justify-items: center;
     iframe{
     display: flex;
     justify-content: center;

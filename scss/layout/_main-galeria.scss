@@ -1,33 +1,43 @@
 .main-galeria{
     background-color: bisque;
-    background-image: url(../assets/img/fondo-informate.jpg);
+    background-image: url(../assets/img/fondo-de-main-blanco.jpg);
     background-size: 1440px;
-    height: 600px;
+    height: 1600px;
     img{
     width: 100px;
+    }
+    h5{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 35px;
+        font-size: 27px;
+        font-family: 'Quicksand', sans-serif;
+        background-color: white;
     }
 }
 .h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
-    font-size: 42px;
-    font-family: 'Satisfy', cursive;
-    background-image: url(../assets/img/fondo-informate.jpg);
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
     background-size: 1440px;
     background-position: center;
+    color: white;
 }
 .carrusel{
-    display: flex;
-    max-width: 7000px;
-    height: 900px;
+    display:flex ;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 1500px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
 }
 .carrusel-img{
-    width: 100%;
+    width: 1500px;
     object-fit:cover;
     scroll-snap-align:center;
     img{

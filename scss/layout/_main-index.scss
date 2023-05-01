@@ -61,9 +61,10 @@ main{
     .section-main2{
         display: flex;
         flex-direction: column;
-        height: 250px;
+        height: 300px;
         background-color: white;
         width: 1440px;
+        padding: 20px;
         align-items: center;
     h2{
         padding: 10px;
@@ -87,12 +88,13 @@ main{
         height: 1500px;
         flex-direction: column;
         align-items: center;
-        background-image: url();
+        background-image: url(../assets/img/fondo-index.jpg);
+        background-size:1500px;
     }
 
 .container-index{
         width: 1000px;
-        height: 1600px;
+        height: 1500px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -100,13 +102,13 @@ main{
     figure{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center, center;
     }
     h2{
-        font-size: 35px;
-        font-family:  'Quicksand', sans-serif;
+        font-size: 40px; 
+        font-family: 'Quicksand', sans-serif;
         padding: 20px;
-        margin: 15px;
+        margin: 70px;
     }
     img{
         width: 220px;
@@ -125,9 +127,11 @@ main{
     figcaption{
         font-size: 20px;
         margin: 10px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-right: 40px;
+        font-family:  'Quicksand', sans-serif;
+        margin: 40px;
         padding-right: 10px;
+        text-align: center;
+        justify-self: center;
         }
     
 }
