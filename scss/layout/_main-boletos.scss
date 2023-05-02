@@ -31,7 +31,7 @@
 .sect1 h2{
     grid-area: part1;
     font-size: 30px;
-    font-family:'Satisfy', cursive; 
+    font-family: 'Quicksand', sans-serif;
     margin: 10px;
     text-align:center;
     height: 40px;
@@ -50,21 +50,29 @@
     flex-direction: column;
     height: 100px;
 }
-.sect1{
+.part1{
     label{
-    font-size: 18px;
-    font-family:'Ubuntu', sans-serif;
+    font-size:27px;
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+}
+.part1{
+    label{
+    font-size:27px;
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif;
 }
 }
 .sect1{
     legend{
     font-size: 22px;
-    font-family:'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 }
 .sect1{
     span{
     font-size: 20px;
-font-family:'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 }
