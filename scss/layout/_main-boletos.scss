@@ -10,14 +10,14 @@
     background-image: url(../assets/img/fondo-informate.jpg);
     background-size: 1440px;
     img{
-        width: 300px;
+        width: 320px;
     }
 }
 
 .sect1{
     grid-area: sect1;
-    padding: 40px;
-    margin: 45px;
+    padding: 10px;
+    margin: 15px;
     width: 40%;
     display: grid;
     grid-template-columns: 3;
@@ -40,9 +40,20 @@
 }
 .part2{
     grid-area: part2;
+    
+    label{
+        font-size:27px;
+        margin-top: 25px;
+        font-family: 'Quicksand', sans-serif;
+}
 }
 .part3{
     grid-area: part3;
+    label{
+        font-size:27px;
+        margin-top: 25px;
+        font-family: 'Quicksand', sans-serif;
+}
 }
 .sect1 fieldset{
     grid-area: part4;
@@ -50,27 +61,16 @@
     flex-direction: column;
     height: 100px;
 }
-.part1{
     label{
     font-size:27px;
     margin-top: 25px;
     font-family: 'Quicksand', sans-serif;
-}
-}
-.part1{
-    label{
-    font-size:27px;
-    margin-top: 25px;
-    font-family: 'Quicksand', sans-serif;
-}
 }
 .sect1{
     legend{
     font-size: 22px;
     font-family: 'Quicksand', sans-serif;
-}
-}
-.sect1{
+    }
     span{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
