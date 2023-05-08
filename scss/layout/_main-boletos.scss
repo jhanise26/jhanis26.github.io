@@ -1,87 +1,118 @@
 .main-boletos{
-    display: grid;
+    display: flex;
+    justify-content: center;
     width: 1440px;
     height: 1700px;
-    grid-template-columns: 2 ;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    "fotm sect1"
-    "fotm sect1";
     background-image: url(../assets/img/fondo-informate.jpg);
     background-size: 1440px;
-    img{
-        width: 320px;
-    }
 }
 
 .sect1{
-    grid-area: sect1;
-    padding: 10px;
+    height: 1500px;
+    padding: 60px;
     margin: 5px;
-    width: 40%;
+    width: 80%;
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    grid-template-areas: 
-    "none part1 ."
-    "part2 . part3"
-    " part4 part4 part4";
-    gap: 15px;
+    grid-template-columns: 2;
+    grid-template-rows: 8;
+    grid-template-areas:
+    " text text" 
+    "part2 part3"
+    "part2 part3"
+    "part2 part3"
+    "part4 part4"
+    "part4 part4"
+    " part4 part4"
+    " part4 part4";
+    gap: 10px;
 }
 .sect1 h2{
-    grid-area: part1;
+    grid-area: text;
     font-size: 36px;
     font-family: 'Quicksand', sans-serif;
     margin: 10px;
     text-align:center;
-    height: 40px;
-    padding-top: 0px;
-    margin-top: 0px;
+    background-color: white;
+    height: 100px;
+    padding: 30px;
 }
 .part2{
     grid-area: part2;
-    height: 200px;
+    height: 800px;
     label{
-        font-size:30px;
-        margin-top: 15px;
+        font-size: 27px;
+        margin: 15px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 40px;
         font-family: 'Quicksand', sans-serif;
-}
-input{
-    height: 40px;
-    font-size: 30px;
-} 
-span{
-    height: 40px;
-    font-size: 30px;
-} 
+        text-align: center;
+    }
+    input{
+    height: 30px;
+    width: 30px;
+    } 
+    figure{
+        width: 100%;
+        img{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            padding: 10px;
+            padding-left: 27px;
+        }
+    }
 }
 .part3{
     grid-area: part3;
-    height: 200px;
+    height: 800px;
     label{
-        font-size:27px;
-        margin-top: 15px;
+        font-size: 27px;
+        margin: 15px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 40px;
         font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    input{
+        height: 30px;
+        width: 30px;
+        } 
+    figure{
+        width: 100%;
+        img{
+            padding: 10px;
+            padding-right: 27px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            width: 85%;
+    }
 }
 }
 .sect1 fieldset{
     grid-area: part4;
     display: flex;
     flex-direction: column;
-    height: 100px;
-}
+    height: 500px;
     label{
     font-size:27px;
     margin-top: 25px;
     font-family: 'Quicksand', sans-serif;
-}
-.sect1{
-    legend{
-    font-size: 22px;
-    font-family: 'Quicksand', sans-serif;
     }
-    span{
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-}
+    legend{
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        }
+        span{
+        font-size: 25px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    input{
+        font-size: 25px;
+        font-family: 'Quicksand', sans-serif
+    }
+
 }

@@ -376,78 +376,100 @@ footer {
     font-family: 'Quicksand', sans-serif; }
 
 .main-boletos {
-  display: grid;
+  display: flex;
+  justify-content: center;
   width: 1440px;
   height: 1700px;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  grid-template-areas: "fotm sect1" "fotm sect1";
   background-image: url(../assets/img/fondo-informate.jpg);
   background-size: 1440px; }
-  .main-boletos img {
-    width: 320px; }
 
 .sect1 {
-  grid-area: sect1;
-  padding: 10px;
+  height: 1500px;
+  padding: 60px;
   margin: 5px;
-  width: 40%;
+  width: 80%;
   display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 3;
-  grid-template-areas: "none part1 ." "part2 . part3" " part4 part4 part4";
-  gap: 15px; }
+  grid-template-columns: 2;
+  grid-template-rows: 8;
+  grid-template-areas: " text text"  "part2 part3" "part2 part3" "part2 part3" "part4 part4" "part4 part4" " part4 part4" " part4 part4";
+  gap: 10px; }
 
 .sect1 h2 {
-  grid-area: part1;
+  grid-area: text;
   font-size: 36px;
   font-family: 'Quicksand', sans-serif;
   margin: 10px;
   text-align: center;
-  height: 40px;
-  padding-top: 0px;
-  margin-top: 0px; }
+  background-color: white;
+  height: 100px;
+  padding: 30px; }
 
 .part2 {
   grid-area: part2;
-  height: 200px; }
+  height: 800px; }
   .part2 label {
-    font-size: 30px;
-    margin-top: 15px;
-    font-family: 'Quicksand', sans-serif; }
+    font-size: 27px;
+    margin: 15px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center; }
   .part2 input {
-    height: 40px;
-    font-size: 30px; }
-  .part2 span {
-    height: 40px;
-    font-size: 30px; }
+    height: 30px;
+    width: 30px; }
+  .part2 figure {
+    width: 100%; }
+    .part2 figure img {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      padding: 10px;
+      padding-left: 27px; }
 
 .part3 {
   grid-area: part3;
-  height: 200px; }
+  height: 800px; }
   .part3 label {
     font-size: 27px;
-    margin-top: 15px;
-    font-family: 'Quicksand', sans-serif; }
+    margin: 15px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center; }
+  .part3 input {
+    height: 30px;
+    width: 30px; }
+  .part3 figure {
+    width: 100%; }
+    .part3 figure img {
+      padding: 10px;
+      padding-right: 27px;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      width: 85%; }
 
 .sect1 fieldset {
   grid-area: part4;
   display: flex;
   flex-direction: column;
-  height: 100px; }
-
-label {
-  font-size: 27px;
-  margin-top: 25px;
-  font-family: 'Quicksand', sans-serif; }
-
-.sect1 legend {
-  font-size: 22px;
-  font-family: 'Quicksand', sans-serif; }
-
-.sect1 span {
-  font-size: 20px;
-  font-family: 'Quicksand', sans-serif; }
+  height: 500px; }
+  .sect1 fieldset label {
+    font-size: 27px;
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif; }
+  .sect1 fieldset legend {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif; }
+  .sect1 fieldset span {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif; }
+  .sect1 fieldset input {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif; }
 
 .main-galeria {
   background-color: bisque;
@@ -858,12 +880,12 @@ label {
     height: 1570px; }
     .main-maps h2 {
       display: flex;
-      justify-content: center;
+      text-align: center;
       font-size: 24px;
       padding: 32px; }
     .main-maps h1 {
       display: flex;
-      justify-content: center;
+      text-align: center;
       font-size: 16px;
       padding: 25px; }
     .main-maps div {
