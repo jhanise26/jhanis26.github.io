@@ -1,7 +1,7 @@
 .main-boletos{
     display: grid;
     width: 1440px;
-    height: 1500px;
+    height: 1700px;
     grid-template-columns: 2 ;
     grid-template-rows: 2;
     grid-template-areas: 
@@ -30,7 +30,7 @@
 }
 .sect1 h2{
     grid-area: part1;
-    font-size: 30px;
+    font-size: 36px;
     font-family: 'Quicksand', sans-serif;
     margin: 10px;
     text-align:center;
@@ -40,15 +40,24 @@
 }
 .part2{
     grid-area: part2;
-    
+    height: 200px;
     label{
-        font-size:27px;
+        font-size:30px;
         margin-top: 15px;
         font-family: 'Quicksand', sans-serif;
 }
+input{
+    height: 40px;
+    font-size: 30px;
+} 
+span{
+    height: 40px;
+    font-size: 30px;
+} 
 }
 .part3{
     grid-area: part3;
+    height: 200px;
     label{
         font-size:27px;
         margin-top: 15px;

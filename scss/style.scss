@@ -82,7 +82,7 @@
             flex-direction: column;
             align-items: center;
             background-image: url(../assets/img/fondo-index.jpg);
-            background-size:1500px;
+            background-size: 2000px;
         }
     
     .container-index{
@@ -121,30 +121,31 @@ footer{
     }
 .main-informate{
     background-image: url(../assets/img/fondo-de-main-blanco.jpg);
-    background-size: contain;
+    background-size: 3000px;
+    height: 4600px;
     h2{
     display: flex;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 35px;
+    justify-content: center, center;
+    font-size: 30px;
     padding: 100px;
-    color: white;
+    color: whitesmoke;
+    text-align: center;
     }
     h4{
     background-color: white;
     padding: 30px;
-    font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 23px;
     display: flex;
     justify-content: center;
     }
     section{
-        width: 1100px;
-        padding: 50px;
-        margin: 115px;
+        width: 680px;
+        padding: 10px;
+        margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
-        align-content: center, center;
+        margin-left: 45px;
+        justify-content: center, center;
         background-color: rgba(255, 255, 255, 0.575);
     }
 }
@@ -153,14 +154,13 @@ footer{
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
     margin: 30px;
     h2{
         grid-area: text1;
-        background-color: black;
-        color: white;
+        padding: 40px;
         display: flex;
         align-items: center;
-        font-family: 'Quicksand', sans-serif;
         font-size: 30px;
     }
         h3{
@@ -171,48 +171,306 @@ footer{
         padding: 20px;
         margin: 15px;
     }
-
-}
-.two{
-    background-color: lightcoral;
-   @extend .one
-    }
-
-.three{
-    background-color: lightgreen;
-   @extend .one
-    }
-
-.four{
-    background-color: lightseagreen;
-    @extend .one
-}
-.five{
-    background-color: lightsalmon;
-    @extend .one
-}
-.six{
-    background-color: #0e5d6fc9;
-    @extend .one
-}
-.seven{
-    background-color: lightgreen;
-    @extend .one
 }
 .video{
-    width: 1440px;
-    height: 380px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
     iframe{
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 40px;
-    margin-left: 450px;
+    margin-left: 60px;
     }
 }
+.main-maps{
+    background-size: 768px;
+    height: 1150px;
+    h2{
+    display: flex;
+    justify-content: center;
+    font-size: 33px;
+    padding: 40px;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        padding: 30px;
+    }
+    div{
+        padding: 40px;
+        display: grid;
+        row-gap: 30px;
+        grid-template-columns: 2;
+        grid-template-rows: 4;
+        grid-template-areas: 
+        "ub1 ub2"
+        "ub3 ub4"
+        "ub5 ub6"
+        "ub7 ub7";
+        justify-content: space-evenly;
+    }
 }
+    .ubi1{
+        grid-area: ub1;
+        width: 200px;
+        height: 170px;
+    }
+    .ubi2{
+        grid-area: ub2;
 
+    }
+    .ubi3{
+        grid-area: ub3;
 
+    }
+    .ubi4{
+        grid-area: ub4;
 
+    }
+    .ubi5{
+        grid-area: ub5;
 
+    }
+    .ubi6{
+        grid-area: ub6;
 
+    }
+    .ubi7{
+        grid-area: ub7;
+        
+    }
+}
+@media (max-width:390px){
+    header{
+        width: 390px;
+        height: 330px;
+    }
+    main{
+        max-width: 390px;
+    }
+    .section-main{
+        background-image: contain; 
+        column-gap: 0px;
+        justify-content: center;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3";
+    h1{
+        font-size: 45px;
+        padding: 10px 30px 0px 30px;
+        margin: 10px 30px 0px 30px;
+    }
+    h2{
+        font-size: 28px;
+        color: white;
+    }
+        button{
+        width: 200px;
+        margin-left: 30px;
+        height: 70px;
+    }
+    a{
+        font-size: 17px;
+        }
+    a:hover{
+        font-size:19px;
+    }
+    }
+    .section-main2{
+            height: 320px;
+
+            width: 390px;
+
+        h2{
+            font-size: 25px;
+            }
+        p{
+            font-size: 15px;
+            }
+        }
+    .section-main3{
+        background-size: 4200px;
+        height: 3300px;
+        }
+    .container-index{
+            width: 280px;
+            height: 3300px;
+        h2{
+            font-size: 22px;
+            text-align: center;
+    }
+    }
+footer{
+        flex-direction: column;
+        max-width: 390px;
+        background-color: linear-gradient(to bottom, #eaa815, #eeaf28, #f1b736, #f5be44, #f9c550);
+    
+        div{
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        text-align: center;
+    }
+        figure{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin-right: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        }
+    }
+        h3{
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+        figcaption{
+        font-size: 13;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    }
+.main-informate{
+        background-image: url(../assets/img/fondo-de-main-blanco.jpg);
+        background-size: 2000px;
+        height: 8500px;
+        h2{
+        justify-content: center, center;
+        font-size: 22px;
+        padding: 80px;
+        text-align: center;
+        }
+        h4{
+        background-color: white;
+        padding: 20px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        }
+        section{
+            width: 300px;
+            padding: 10px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 45px;
+            justify-content: center, center;
+            background-color: rgba(255, 255, 255, 0.575);
+        }
+    }
+    .one{
+        background-color: lightblue;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 30px;
+        h2{
+            grid-area: text1;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 20px;
+            padding: 30px;
+        }
+            h3{
+            grid-area: text2;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            background-color: white;
+            padding: 20px;
+            margin: 0px;
+        }
+    }
+    .video{
+        width: 40px;
+        height: 70px;
+        justify-content: center;
+        iframe{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+        margin-left: 10px;
+        }
+    }
+    .main-maps{
+        background-size: 1400px;
+        height: 1570px;
+        h2{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        padding: 32px;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            padding: 25px;
+        }
+        div{
+            padding: 40px;
+            display: grid;
+            row-gap: 30px;
+            grid-template-columns: 1;
+            grid-template-rows: 7;
+            grid-template-areas: 
+            "ub1"
+            "ub2"
+            "ub3"
+            "ub4"
+            "ub5"
+            "ub6"
+            "ub7";
+            justify-content: space-evenly;
+        }
+    }
+        .ubi1{
+            grid-area: ub1;
+            width: 180px;
+            height: 160px;
+        }
+        .ubi2{
+            grid-area: ub2;
+    
+        }
+        .ubi3{
+            grid-area: ub3;
+    
+        }
+        .ubi4{
+            grid-area: ub4;
+    
+        }
+        .ubi5{
+            grid-area: ub5;
+    
+        }
+        .ubi6{
+            grid-area: ub6;
+    
+        }
+        .ubi7{
+            grid-area: ub7;
+            
+        }
+}
