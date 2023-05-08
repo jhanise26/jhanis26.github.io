@@ -11,66 +11,208 @@
 @import "layout/main-maps";
 
 
-    footer{
-        width: 768;
-        flex-direction: column;
-        div{ 
-            flex-direction: row-reverse;
-        gap: 30px;
-        }
-        img{
-        width: 48px;
-        height: 48px;
-        }
-    figure{ 
-        font-size: 30px;
-        justify-self: center;
-    
-    }
-    figcaption{
-        font-size: 22px;
-    }
+.main-informate section{
+    width: 1200px;
 }
-    
-    .section-main{
-        background-image: url(../assets/img/foto-portada.jpg);
-        background-size: contain;
-        height: 460px;
-        ;
-        h1{
-            font-size: 60px;
-        }
-    h2{
-        font-size: 25px;
-        color: rgb(255, 255, 255);
-        }
-    button{
-        width: 320px;
-    }
-    a{
-        font-size: 10px;
-    }
+.section-main a{
+    font-size: 26px;
+    padding-top: 20px;
+}
+.section-main h1{
+    font-size: 80px;
+}
+.section-main h2{
+    font-size: 34px;
 }
 
-    .section-main2{
-        height: 260px;
-        width: 100%;
-    h2{
-        font-size: 40px;
+@media (max-width:768px){
+    header{
+        height: 180px;
     }
-    p{
-        display: flex;
-        justify-content: center;
+    main{
+        background-color: rgba(240, 128, 128, 0.829);
+        max-width: 768px;
+    }
+    .section-main{
+        background-size: 768px;
+        height: 350px; 
+        column-gap: 20px;
+        h1{
+        font-size: 52px;
+        padding: 10px 30px 0px 30px;
+        margin: 10px 30px 0px 30px;
+    }
+    h2{
         font-size: 30px;
-        margin: 0px 5px 2px 5px;
+        color: white;
+    }
+        button{
+        width: 150px;
+        justify-content: center;
+        margin: 0px;
+        padding: 10px;
+        height: 70px;
+    }
+    a{
+        padding-top: 9px;
+        font-size: 17px;
+        }
+    a:hover{
+        font-size:20px;
+        justify-content: center;
     }
 }
+    .section-main2{
+            height: 300px;
+            background-color: white;
+            width: 768px;
+            padding: 20px;
+            align-items: center;
+
+        h2{
+            font-size: 28px;
+            }
+        p{
+            font-size: 17px;
+            }
+        }
     .section-main3{
-    h2{
-        font-size: 37px;
+            display: flex;
+            height: 1800px;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../assets/img/fondo-index.jpg);
+            background-size:1500px;
+        }
+    
+    .container-index{
+            width: 700px;
+            height: 1800px;
+        h2{
+            font-size: 28px;
+        }
     }
-    img{
-        width: 250px;
-        height: 250px;
+
+footer{
+        flex-direction: column;
+        width: 768px;
+    
+        div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+        figure{
+        display: flex;
+        flex-direction: row;
+    }
+        img{
+        display: flex;
+        width: 52px;
+        height: 52px;
+        flex-direction: column;
+    }
+        h3{
+        font-size: 16px;
+    }
+        figcaption{
+        font-size: 15px;
+    }
+    }
+.main-informate{
+    background-image: url(../assets/img/fondo-de-main-blanco.jpg);
+    background-size: contain;
+    h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    padding: 100px;
+    color: white;
+    }
+    h4{
+    background-color: white;
+    padding: 30px;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    }
+    section{
+        width: 1100px;
+        padding: 50px;
+        margin: 115px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-content: center, center;
+        background-color: rgba(255, 255, 255, 0.575);
     }
 }
+.one{
+    background-color: lightblue;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 30px;
+    h2{
+        grid-area: text1;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+    }
+        h3{
+        grid-area: text2;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 17px;
+        background-color: white;
+        padding: 20px;
+        margin: 15px;
+    }
+
+}
+.two{
+    background-color: lightcoral;
+   @extend .one
+    }
+
+.three{
+    background-color: lightgreen;
+   @extend .one
+    }
+
+.four{
+    background-color: lightseagreen;
+    @extend .one
+}
+.five{
+    background-color: lightsalmon;
+    @extend .one
+}
+.six{
+    background-color: #0e5d6fc9;
+    @extend .one
+}
+.seven{
+    background-color: lightgreen;
+    @extend .one
+}
+.video{
+    width: 1440px;
+    height: 380px;
+    iframe{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    margin-left: 450px;
+    }
+}
+}
+
+
+
+
+

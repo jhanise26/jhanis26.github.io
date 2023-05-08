@@ -1,7 +1,7 @@
 .main-boletos{
     display: grid;
     width: 1440px;
-    height: 1200px;
+    height: 1500px;
     grid-template-columns: 2 ;
     grid-template-rows: 2;
     grid-template-areas: 
@@ -17,7 +17,7 @@
 .sect1{
     grid-area: sect1;
     padding: 10px;
-    margin: 15px;
+    margin: 5px;
     width: 40%;
     display: grid;
     grid-template-columns: 3;
@@ -26,7 +26,7 @@
     "none part1 ."
     "part2 . part3"
     " part4 part4 part4";
-    gap: 25px;
+    gap: 15px;
 }
 .sect1 h2{
     grid-area: part1;
@@ -43,7 +43,7 @@
     
     label{
         font-size:27px;
-        margin-top: 25px;
+        margin-top: 15px;
         font-family: 'Quicksand', sans-serif;
 }
 }
@@ -51,7 +51,7 @@
     grid-area: part3;
     label{
         font-size:27px;
-        margin-top: 25px;
+        margin-top: 15px;
         font-family: 'Quicksand', sans-serif;
 }
 }
