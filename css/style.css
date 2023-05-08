@@ -465,11 +465,13 @@ footer {
     font-size: 30px;
     font-family: 'Quicksand', sans-serif; }
   .sect1 fieldset span {
-    font-size: 25px;
+    font-size: 26px;
     font-family: 'Quicksand', sans-serif; }
   .sect1 fieldset input {
-    font-size: 25px;
-    font-family: 'Quicksand', sans-serif; }
+    font-size: 26px;
+    font-family: 'Quicksand', sans-serif;
+    height: 40px;
+    padding: 15px; }
 
 .main-galeria {
   background-color: bisque;
@@ -739,7 +741,77 @@ footer {
   .ubi6 {
     grid-area: ub6; }
   .ubi7 {
-    grid-area: ub7; } }
+    grid-area: ub7; }
+  .main-boletos {
+    width: 768px;
+    height: 1880px; }
+  .sect1 {
+    height: 1900px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 8;
+    grid-template-areas: " text text"  "part2 part2" "part2 part2" "part3 part3" "part3 part3" "part4 part4" " part4 part4" " part4 part4";
+    gap: 0px; }
+  .sect1 h2 {
+    grid-area: text;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    height: 100px;
+    padding: 30px; }
+  .part2 {
+    grid-area: part2;
+    height: 500px; }
+    .part2 label {
+      font-size: 27px;
+      margin: 15px;
+      padding: 10px;
+      margin-left: 70px;
+      margin-bottom: 40px;
+      text-align: center; }
+    .part2 input {
+      height: 25px;
+      width: 25px; }
+    .part2 figure {
+      width: 100%; }
+      .part2 figure img {
+        height: 500px;
+        padding-right: 27px;
+        padding-left: 67px; }
+  .part3 {
+    grid-area: part3;
+    height: 500px; }
+    .part3 label {
+      font-size: 27px;
+      margin: 15px;
+      padding: 10px;
+      margin-left: 70px;
+      margin-bottom: 40px;
+      text-align: center; }
+    .part3 input {
+      height: 25px;
+      width: 25px; }
+    .part3 figure {
+      width: 100%; }
+      .part3 figure img {
+        height: 500px;
+        padding-right: 27px;
+        padding-left: 67px; }
+  .sect1 fieldset {
+    height: 480px; }
+    .sect1 fieldset label {
+      font-size: 22px;
+      margin-top: 25px; }
+    .sect1 fieldset legend {
+      font-size: 27px; }
+    .sect1 fieldset span {
+      font-size: 22px; }
+    .sect1 fieldset input {
+      font-size: 22px;
+      height: 40px;
+      padding: 15px; } }
 
 @media (max-width: 390px) {
   header {
@@ -911,4 +983,73 @@ footer {
   .ubi6 {
     grid-area: ub6; }
   .ubi7 {
-    grid-area: ub7; } }
+    grid-area: ub7; }
+  .main-boletos {
+    width: 390px;
+    height: 1780px; }
+  .sect1 {
+    height: 1800px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 8;
+    grid-template-areas: " text"  "part2" "part2" "part3" "part3" "part4" "part4" "part4";
+    gap: 0px; }
+  .sect1 h2 {
+    grid-area: text;
+    font-size: 22px;
+    margin: 10px;
+    height: 60px;
+    padding: 20px; }
+  .part2 {
+    grid-area: part2;
+    height: 430px;
+    gap: 20px; }
+    .part2 label {
+      font-size: 18px;
+      margin-left: 70px;
+      margin-bottom: 60px;
+      text-align: center; }
+    .part2 input {
+      height: 20px;
+      width: 20px; }
+    .part2 figure {
+      width: 100%; }
+      .part2 figure img {
+        margin-top: 30px;
+        height: 400px;
+        width: 100%;
+        padding: 0px; }
+  .part3 {
+    grid-area: part3;
+    height: 430px; }
+    .part3 label {
+      font-size: 18px;
+      margin: 15px;
+      padding: 10px;
+      margin-left: 50px;
+      margin-bottom: 40px;
+      text-align: center; }
+    .part3 input {
+      height: 20px;
+      width: 20px; }
+    .part3 figure {
+      width: 100%; }
+      .part3 figure img {
+        margin-top: 30px;
+        height: 400px;
+        padding: 0px;
+        width: 100%; }
+  .sect1 fieldset {
+    height: 450px; }
+    .sect1 fieldset label {
+      font-size: 20px;
+      margin-top: 25px; }
+    .sect1 fieldset legend {
+      font-size: 22px; }
+    .sect1 fieldset span {
+      font-size: 18px; }
+    .sect1 fieldset input {
+      font-size: 18px;
+      height: 40px;
+      padding: 15px; } }
